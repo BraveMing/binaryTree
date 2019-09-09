@@ -12,7 +12,7 @@ public class StackSearch implements Search {
                 System.out.print(node.getValue());
                 node = node.getLeft();
             }
-            if (node == null) {
+            if (!stack.empty()) {
                 node = stack.pop();
                 node = node.getRight();
             }
